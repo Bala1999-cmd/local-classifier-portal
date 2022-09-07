@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Pollachi to Valparai</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Pollachi is one of the tourist place in Tamilnadu, India. Pollachi is surrounded with hills (Merku Thodarchi Malai), one of the best cinema shooting spot in Tamil nadu. Also famous for world standard coconuts and coir products" />
+<meta name="author" content="http://smartpollachi.com" />
+
+
+
+<!--CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+<script src="js/jquery.js"></script>
+
+<!--fb like box -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+
+
+
+</script>
+
+<script>
+$(document).ready(function () {
+    $(".btn-select").each(function (e) {
+        var value = $(this).find("ul li.selected").html();
+        if (value != undefined) {
+            $(this).find(".btn-select-input").val(value);
+            $(this).find(".btn-select-value").html(value);
+        }
+    });
+});
+
+$(document).on('click', '.btn-select', function (e) {
+    e.preventDefault();
+    var ul = $(this).find("ul");
+    if ($(this).hasClass("active")) {
+        if (ul.find("li").is(e.target)) {
+            var target = $(e.target);
+            target.addClass("selected").siblings().removeClass("selected");
+            var value = target.html();
+            $(this).find(".btn-select-input").val(value);
+            $(this).find(".btn-select-value").html(value);
+        }
+        ul.hide();
+        $(this).removeClass("active");
+    }
+    else {
+        $('.btn-select').not(this).each(function () {
+            $(this).removeClass("active").find("ul").hide();
+        });
+        ul.slideDown(300);
+        $(this).addClass("active");
+    }
+});
+
+$(document).on('click', function (e) {
+    var target = $(e.target).closest(".btn-select");
+    if (!target.length) {
+        $(".btn-select").removeClass("active").find("ul").hide();
+    }
+});
+
+
+
+
+
+</script>
+
+
+</head>
+
+<body>
+
+
+<!--TOP HEADER AREA -->
+<section class="top_header">
+	<div class="container">
+    	<div class="row">
+        	<!--Popular destinations -->
+            <div class="col-lg-3 sle">
+            	 <a class="btn btn-default btn-select">
+                <input type="hidden" class="btn-select-input" id="" name="" value="" />
+                <span class="btn-select-value">Select an Item</span>
+                <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+                <ul>
+                    <li class="selected">Popular Destinations</li>
+                    <li onClick="location.href='topslip.html'">Topslip</li>
+                    <li onClick="location.href='parambikulam.html'">Parambikulam</li>
+                    <li onClick="location.href='valparai.html'">Valparai</li>
+                    <li onClick="location.href='aliyar.html'">Aliyar</li>
+                    <li onClick="location.href='thirumoorthyhills.html'">Thirumoorthy Hills</li>
+                    <li onClick="location.href='amaravathyriver.html'">Amaravathy River</li>
+                </ul>
+            </a> 
+            </div>
+
+            <!--Top menu -->      
+            <div class="col-lg-7">
+            	<div class="navbar navbar-default navbar-static-top">
+            <div class="menu-con">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                  
+                </div>
+                <div class="navbar-collapse collapse  ">
+                    <ul class="nav navbar-nav ">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="advertisehere.html">Advertise Here</a></li>
+                        <li><a href="offers.html">Offers </a></li>
+                        <li><a href="events.html">Events  </a></li>
+                        <li><a href="news.html">News  </a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>            
+            </div>     
+
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--MAIN AREA ALL CATEGORIES -->
+<div class="container">
+	<div class="row">
+    	<!--All Categories  -->
+    	<div class="col-lg-9">
+        	<div class="categories_title">
+              	<h3>Pollachi to Valparai</h3>                      
+            </div>
+            
+            
+             <!--categories 1st row starts -->
+             <div class="row categories_row">
+               	<div class="col-lg-12">
+                	<p class="page_text">Distance : 1 hour 52 min (65.1 km) via SH 78 <br>
+
+                   
+   	        Once in 30Minutes from 4.00AM to 10.00PM<br>
+   	        <br>
+            <strong>By Air</strong><br>
+Coimbatore airport is the nearest international airport to Valparai - approximately 124 km. International flights to Singapore and Sharjah are provided by Silk Air (A subsidary of Singapore Airlines) and Air Arabia respectively. Domestic airlines fly to Chennai, Bangalore, New Delhi, Mumbai, Hyderabad and other Indian cities.<br>
+<br>
+                	</p>
+                	<p><strong>By Bus</strong><br>
+               	  Public buses are available every 30 minutes from Pollachi Bus Terminal. However, they will be overcrowded and may take more than 4 hours to cover the distance of about 64 km. Visitors arriving via Coimbatore must visit Pollachi and then catch a bus to Valparai bus from there.</p>
+                	<p>From Chalakudi there is bus too valparai... first bus starts from chalakudi by 6 am... it will take near to 6 hour to reach valpari... 80 kms... beautiful route... going through thick forest...<br>
+                	  <br>
+                	  <strong>By Train</strong><br>
+                	  Coimbatore Junction is the nearest railway station - approximately 105 km. Coimbatore has got train services to most Indian cities.                	  <br>
+                	  <br>
+                	  <strong>By Bus</strong><br>
+                	  Every 30 minutes, there is a bus from Pollachi to Valparai. However, these buses will be fully packed and may take 4 hours to cover a distance of 64 km.<br>
+                	  <br>
+                	  <strong>By Car</strong><br>
+                	  Taxis will be the viable option, especially if you are planning to get off now and then, take pictures and enjoy the scenery.<br>
+                    </p>
+                	<p class="page_text">  <br>
+              	  </p>
+                </div>    
+             </div>
+                    
+              
+             
+             
+              
+        </div>        
+        
+        <!--Ad Widget -->
+        <div class="col-lg-3">
+        	 <!--1st ad -->
+             <div class="right_ad img-responsive"> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- smartpollachi_hotel_sb_1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9422411093751117"
+     data-ad-slot="1302239787"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>                  
+             
+                         
+        </div>
+        </div>
+        </div>
+  </div>
+</div>
+
+
+<!--FOOTER BOTTOM -->
+<section id="bottom">
+<div class="container">
+	<div class="row ">
+    	<!--1st widget -->
+    	<div class="col-lg-3 bottom_widget">
+        	<div class="bottom_widget_title">
+            	<h4>smartpollachi.com</h4>
+          </div>
+            
+            <p>
+            smartpollachi.com is an online business directory offering COMPLETELY FREE listings to Pollachi,
+This portal is owned and maintained by <p>Site Designed & Maintained By<span><a href="#"> Balasubramaniam</a></span></p>
+smartpollachi.com was launched in March 2022 and currently has nearly many informations listed .
+            </p>
+            
+        </div>
+        
+        <!--2nd widget -->
+        <div class="col-lg-3 bottom_widget">
+        	<div class="bottom_widget_title">
+            	<h4>Customer Support</h4>
+            </div>
+            
+            <p>Call : +91-90807 21012 / 97875 60773<br />
+
+			Email : smartpollachi@gmail.com </p>
+            
+        </div>
+        
+        <!--3rd widget -->
+        <div class="col-lg-3 bottom_widget">
+        	<div class="bottom_widget_title">
+            	<h4>Links</h4>
+            </div>
+            
+            <div class="bot_social">
+            	<ul>
+                	<li><a href="advertisehere.html">Advertise</a></li>
+                    <li><a href="advertisehere.html">Pricing</a></li>
+                    <li><a href="aboutus.html">Support</a></li>
+                    <li><a href="aboutus.html">Abuse</a></li>
+                    <li><a href="aboutus.html">Contact Us</a></li>
+                    
+                </ul>
+            </div>
+            
+            
+            
+        </div>
+        
+        <!--4th widget -->
+        <div class="col-lg-3 bottom_widget">
+        	<div class="bottom_widget_title">
+            	<h4>Follow us on</h4>
+            </div>
+            
+            <div class="fb-page" data-href="https://www.facebook.com/smartpollachi/" data-tabs="timeline" data-width="270" data-height="210" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/smartpollachi artpollachi/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/smartpollachi/">smartpollachi.com</a></blockquote></div>
+            
+        </div>
+    </div>
+    
+   
+</div>
+
+</section>
+
+
+<!--copyrights -->
+<section id="section_copyright">
+<div class="container"> 
+    <div class="row copyright">
+    	<div class="col-lg-6">
+        	<p>Site Designed & Maintained By<span><a href="#"> Balasubramaniam</a></span></p>
+        </div>
+    </div>    
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="js/bootstrap.min.js"></script>
+
+
+
+
+</body>
+</html>

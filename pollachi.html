@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>About Pollachi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Pollachi is one of the tourist place in Tamilnadu, India. Pollachi is surrounded with hills (Merku Thodarchi Malai), one of the best cinema shooting spot in Tamil nadu. Also famous for world standard coconuts and coir products" />
+
+<meta property="og:type" content="place">
+<meta property="og:title" content="Pollachi">
+<meta property="og:description" content="Pollachi is one of the tourist place in Tamilnadu, India, Asia">
+<meta property="og:url" content="http://smartpollachi.com/pollachi.html">
+<meta property="og:image" content="http://smartpollachi.com/img/SMART-LIST.png">
+<meta property="fb:app_id" content="521971641197095">
+<meta property="place:location:latitude" content="10.6573">
+<meta property="place:location:longitude" content="77.0107"><meta name="author" content="http://smartpollachi.com" />
+
+
+
+<!--CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+<script src="js/jquery.js"></script>
+
+<!--fb like box -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+
+
+
+</script>
+
+<script>
+$(document).ready(function () {
+    $(".btn-select").each(function (e) {
+        var value = $(this).find("ul li.selected").html();
+        if (value != undefined) {
+            $(this).find(".btn-select-input").val(value);
+            $(this).find(".btn-select-value").html(value);
+        }
+    });
+});
+
+$(document).on('click', '.btn-select', function (e) {
+    e.preventDefault();
+    var ul = $(this).find("ul");
+    if ($(this).hasClass("active")) {
+        if (ul.find("li").is(e.target)) {
+            var target = $(e.target);
+            target.addClass("selected").siblings().removeClass("selected");
+            var value = target.html();
+            $(this).find(".btn-select-input").val(value);
+            $(this).find(".btn-select-value").html(value);
+        }
+        ul.hide();
+        $(this).removeClass("active");
+    }
+    else {
+        $('.btn-select').not(this).each(function () {
+            $(this).removeClass("active").find("ul").hide();
+        });
+        ul.slideDown(300);
+        $(this).addClass("active");
+    }
+});
+
+$(document).on('click', function (e) {
+    var target = $(e.target).closest(".btn-select");
+    if (!target.length) {
+        $(".btn-select").removeClass("active").find("ul").hide();
+    }
+});
+
+
+
+
+
+</script>
+
+
+</head>
+
+<body>
+
+
+<!--TOP HEADER AREA -->
+<section class="top_header">
+    <div class="container">
+        <div class="row">
+            <!--Popular destinations -->
+            <div class="col-lg-3 sle">
+                 <a class="btn btn-default btn-select">
+                <input type="hidden" class="btn-select-input" id="" name="" value="" />
+                <span class="btn-select-value">Select an Item</span>
+                <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+                <ul>
+                    <li class="selected">Popular Destinations</li>
+                    <li onClick="location.href='topslip.html'">Topslip</li>
+                    <li onClick="location.href='parambikulam.html'">Parambikulam</li>
+                    <li onClick="location.href='valparai.html'">Valparai</li>
+                    <li onClick="location.href='aliyar.html'">Aliyar</li>
+                    <li onClick="location.href='thirumoorthyhills.html'">Thirumoorthy Hills</li>
+                    <li onClick="location.href='amaravathyriver.html'">Amaravathy River</li>
+                </ul>
+            </a> 
+            </div>
+
+            <!--Top menu -->      
+            <div class="col-lg-7">
+                <div class="navbar navbar-default navbar-static-top">
+            <div class="menu-con">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                  
+                </div>
+                <div class="navbar-collapse collapse  ">
+                    <ul class="nav navbar-nav ">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="advertisehere.html">Advertise Here</a></li>
+                        <li><a href="offers.html">Offers </a></li>
+                        <li><a href="events.html">Events  </a></li>
+                        <li><a href="news.html">News  </a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>            
+            </div>     
+
+            <!--Social icons --> 
+            <div class="col-lg-2 ">
+                <div class="social2" >  
+                 <a href="https://www.facebook.com/smartpollachi/" target="_blank"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
+                 <a href="https://twitter.com/bootsnipp" target="_blank"><i id="social-tw" class="fa fa-twitter-square fa-2x social"></i></a>
+                 <a href="https://youtube.com" target="_blank"><i id="social-yt" class="fa fa-youtube-square fa-2x social"></i></a>
+                 <a href="https://youtube.com" target="_blank"><i id="social-gp" class="fa fa-google-plus-square fa-2x social"></i></a>
+                 
+                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--MAIN AREA ALL CATEGORIES -->
+<div class="container">
+    <div class="row">
+        <!--All Categories  -->
+        <div class="col-lg-9">
+            <div class="categories_title">
+                <h1>Pollachi</h1>                      
+            </div>
+            
+            
+             <!--categories 1st row starts -->
+             <div class="row categories_row">
+                <div class="col-lg-12">
+                   <h2>Pollachi Pincode : 642001</h2>
+                    <p class="lead well">
+                        
+                    Pollachi is a town and a taluk headquarters in Coimbatore district, Tamil Nadu state, India.
+                     Located about 40 km to the south of Coimbatore, it is the second largest town in the district after Coimbatore. Pollachi is a very popular Marketplace, 
+                     with large markets for jaggery and vegetables and is considered to be South India's biggest Cattle market. As of 2011, the town had a population of 90,180.<br><br>
+                     
+                     Pollachi was known as Pozhil Vaitchi in Tamil which became Pollachi. It was also known as Mudi Konda Chola Nallur during the period of the Cholas.
+                     
+                    
+                    </p>
+                    
+                    <h2>Pollachi Business Opportunities</h2>
+                    
+                     
+                       <h4> + Coconut Business </h4>
+                       <h4> + Coir Business </h4>
+                       <h4> + Construction Business </h4> 
+                       <h4> + Textile Business </h4>
+                       <h4> + Coconut Oil Business </h4>
+                       <h4> + Lathe Workshop  Business </h4> 
+                       <h4> + Poultry Farming  Business </h4> 
+                       
+                       
+                    <h2>5 Pollachi Tourist Places | Near to Pollachi</h2>
+                   
+                       <h4> + Aliyar  </h4> 
+                       <p class="well">
+                         - Distance From Pollachi : 22.4 Km <br>
+                         - Tourist Attractions : Aliyar Dam and Park, Fish Park, Boat Ride, Aliyar Ashram, Aquarium <br>
+                         - Foods to Enjoy : Green Mango, Fresh Fish Fry, etc <br>
+                         - Transport: By Road, Government buses, Taxies Available<br>
+                    
+                    </p>
+                       <h4> + Monkey Falls </h4>
+                       <p class="well">
+                         - Distance From Pollachi : 27.5 Km <br>
+                         - Tourist Attractions : Monkey Falls, Monkeys <br>
+                         - Transport: By Road, Government buses, Taxies Available<br>
+                    </p>
+                       <h4> + Topslip </h4>
+                        <p class="well">
+                         - Distance From Pollachi : 30 Km (approx) <br>
+                         - Tourist Attractions : Deers visiting evening, Bird watching, Elephant Ride / Shafari, Boombo / Tree House Stay, Anamalai Tiger Reserve, Karianshola Forest, Anaikunthi Shola Forest, Bison Lodge, Wood House, <br>
+                         - Transport: By Road, Government buses, Taxies Available, But bikes are not allowed<br>
+                    </p>
+                         
+                       <h4> + Valparai </h4>
+                        <p class="well">
+                         - Distance From Pollachi : 65.1 Km <br>
+                         - Tourist Attractions : Tea Estates, Wild Elephant visiting, Cheetah visiting, Langur, Lion Tailed Monkey, Water Falls, Balaji Temple, Chitti Vinayagar Temple, Sholayar Dam, Nallamudi Poonjolai View, Number Paarai, Hair Pin Bends, Dam View Point <br>
+                         - Foods to Enjoy : Freah Tea <br>
+                         - Transport: By Road and Hill Riding, Government buses, Taxies Available<br>
+                    </p>
+                         
+                       <h4> + Parambikulam </h4>
+                        <p class="well">
+                         - Distance From Pollachi : 55.6 Km <br>
+                         - Tourist Attractions : Tiger Reserve, Thunakadavu Dam, Anappadi, Boat House, Kannimara Teak, Wild Life Forest, Treetop House, Hill Stay <br>
+                         - Transport: By Road and Hill Riding, Government buses, Taxies Available, But bikes are not allowed. From Topslip, You should move to forest vehicle from your vehicle.<br> <br>
+                         
+                    </p>
+                         <!--1st ad -->
+                     <div class="right_ad img-responsive"> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- smartpollachi_hotel_sb_1 -->
+                    <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-9422411093751117"
+                    data-ad-slot="1302239787"
+                    data-ad-format="auto"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script></div>    
+                     
+                     
+                       <!--1st ad -->
+                    <h2>Transport | Road | Train | Air</h2>
+                        <h3> Road </h3>
+                        <h4> + TNSTC Bus Service </h4>
+                        <h4> + SETC Bus Service </h4>
+                        <h4> + Private Bus Service, KPN, SRS, ABT, Pollachi Travels </h4>
+                        <h3> Train </h3>
+                        <h4> + Station code: POY </h4>
+                        <h4> + Connecting - Chennai, Coimbatore, Palani, Palakkad, Dindigul, Madurai, Tiruchendur, Trichy </h4>
+                        <h3> Air </h3>
+                        <h4> + Coimbatore International Airport </h4>
+                        <h4> + Airport Code: CJB </h4>
+                        <h4> + Pollachi to Coimbatore International Airport Distance: 55.4 Km </h4> <br><br>
+                        
+                        
+                </div>    
+             </div>
+                    
+              
+             
+             
+              
+        </div>        
+        
+        <!--Ad Widget -->
+        <div class="col-lg-3">
+             <!--1st ad -->
+             <div class="right_ad img-responsive"> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- smartpollachi_hotel_sb_1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9422411093751117"
+     data-ad-slot="1302239787"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>                  
+             
+                         
+        </div>
+        </div>
+        </div>
+ 
+
+
+<!--FOOTER BOTTOM -->
+<section id="bottom">
+<div class="container">
+    <div class="row ">
+        <!--1st widget -->
+        <div class="col-lg-3 bottom_widget">
+            <div class="bottom_widget_title">
+                <h4>smartpollachi.com</h4>
+          </div>
+            
+            <p>
+            smartpollachi.com is an online business directory offering COMPLETELY FREE listings to Pollachi,
+This portal is owned and maintained by  <p>Site Designed & Maintained By<span><a href="#"> Balasubramaniam</a></span></p>
+smartpollachi.com was launched in March 2022 and currently has nearly many informations listed .
+            </p>
+            
+        </div>
+        
+        <!--2nd widget -->
+        <div class="col-lg-3 bottom_widget">
+            <div class="bottom_widget_title">
+                <h4>Customer Support</h4>
+            </div>
+            
+            <p>Call : +91-90807 21012 / 97875 60773<br />
+
+            Email : smartpollachi@gmail.com </p>
+            
+        </div>
+        
+        <!--3rd widget -->
+        <div class="col-lg-3 bottom_widget">
+            <div class="bottom_widget_title">
+                <h4>Links</h4>
+            </div>
+            
+            <div class="bot_social">
+                <ul>
+                    <li><a href="advertisehere.html">Advertise</a></li>
+                    <li><a href="advertisehere.html">Pricing</a></li>
+                    <li><a href="aboutus.html">Support</a></li>
+                    <li><a href="aboutus.html">Abuse</a></li>
+                    <li><a href="aboutus.html">Contact Us</a></li>
+                    
+                </ul>
+            </div>
+            
+            
+            
+        </div>
+        
+        <!--4th widget -->
+        <div class="col-lg-3 bottom_widget">
+            <div class="bottom_widget_title">
+                <h4>Follow us on</h4>
+            </div>
+            
+            <div class="fb-page" data-href="https://www.facebook.com/smartpollachi/" data-tabs="timeline" data-width="270" data-height="210" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/smartpollachi/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/smartpollachi/">smartpollachi.com</a></blockquote></div>
+            
+        </div>
+    </div>
+    
+   
+</div>
+
+</section>
+
+
+<!--copyrights -->
+<section id="section_copyright">
+<div class="container"> 
+    <div class="row copyright">
+        <div class="col-lg-6">
+            Updated on : <p id="demo"></p>
+             <p>Site Designed & Maintained By<span><a href="#"> Balasubramaniam</a></span></p>
+        </div>
+    </div>    
+</div>
+</section>
+
+
+
+
+
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+document.getElementById("demo").innerHTML = Date();
+</script>
+
+
+</body>
+</html>

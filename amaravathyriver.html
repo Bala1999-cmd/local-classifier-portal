@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Amaravathy River</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="http://smartpollachi.com" />
+
+
+
+<!--CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+<script src="js/jquery.js"></script>
+
+<!--fb like box -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+
+
+
+</script>
+
+<script>
+$(document).ready(function () {
+    $(".btn-select").each(function (e) {
+        var value = $(this).find("ul li.selected").html();
+        if (value != undefined) {
+            $(this).find(".btn-select-input").val(value);
+            $(this).find(".btn-select-value").html(value);
+        }
+    });
+});
+
+$(document).on('click', '.btn-select', function (e) {
+    e.preventDefault();
+    var ul = $(this).find("ul");
+    if ($(this).hasClass("active")) {
+        if (ul.find("li").is(e.target)) {
+            var target = $(e.target);
+            target.addClass("selected").siblings().removeClass("selected");
+            var value = target.html();
+            $(this).find(".btn-select-input").val(value);
+            $(this).find(".btn-select-value").html(value);
+        }
+        ul.hide();
+        $(this).removeClass("active");
+    }
+    else {
+        $('.btn-select').not(this).each(function () {
+            $(this).removeClass("active").find("ul").hide();
+        });
+        ul.slideDown(300);
+        $(this).addClass("active");
+    }
+});
+
+$(document).on('click', function (e) {
+    var target = $(e.target).closest(".btn-select");
+    if (!target.length) {
+        $(".btn-select").removeClass("active").find("ul").hide();
+    }
+});
+
+
+
+
+
+</script>
+
+
+</head>
+
+<body>
+
+
+<!--TOP HEADER AREA -->
+<section class="top_header">
+	<div class="container">
+    	<div class="row">
+        	<!--Popular destinations -->
+            <div class="col-lg-3 sle">
+            	 <a class="btn btn-default btn-select">
+                <input type="hidden" class="btn-select-input" id="" name="" value="" />
+                <span class="btn-select-value">Select an Item</span>
+                <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+                <ul>
+                    <li class="selected">Popular Destinations</li>
+                    <li onClick="location.href='topslip.html'">Topslip</li>
+                    <li onClick="location.href='parambikulam.html'">Parambikulam</li>
+                    <li onClick="location.href='valparai.html'">Valparai</li>
+                    <li onClick="location.href='aliyar.html'">Aliyar</li>
+                    <li onClick="location.href='thirumoorthyhills.html'">Thirumoorthy Hills</li>
+                    <li onClick="location.href='amaravathyriver.html'">Amaravathy River</li>
+                </ul>
+            </a> 
+            </div>
+
+            <!--Top menu -->      
+            <div class="col-lg-7">
+            	<div class="navbar navbar-default navbar-static-top">
+            <div class="menu-con">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                  
+                </div>
+                <div class="navbar-collapse collapse  ">
+                    <ul class="nav navbar-nav ">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="advertisehere.html">Advertise Here</a></li>
+                        <li><a href="offers.html">Offers </a></li>
+                        <li><a href="events.html">Events  </a></li>
+                        <li><a href="news.html">News  </a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>            
+            </div>     
+
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--MAIN AREA ALL CATEGORIES -->
+<div class="container">
+	<div class="row">
+    	<!--All Categories  -->
+    	<div class="col-lg-9">
+        	<div class="categories_title">
+              	<h3>Amaravathy River</h3>                      
+   </div>
+            
+            
+             <!--place : 1 -->
+             <div class="row categories_row" id="atr">
+               	<div class="col-lg-12">
+                	<p class="page_text"><strong>Anamalai Tiger Reserve</strong><br>
+By the mid-1800s, large tracts of Valparai Plateau in the Anamalais were under intense tea or coffee plantations after deforestation of the natural forests. By 1866 two-thirds of the plantations were owned by Europeans and the remaining by Indians from coastal towns. Since most native inhabitants either refused to work or were inefficient workers, labour for plantations was brought from the plains of Tamil Nadu to clear forests and grow coffee. Some parts of the forest however were reserved for timber including large areas around Top Slip. This part of the Western Ghats, under the Bombay Presidency were exploited extensively for teak which was supplied to the Bombay Dockyard for shipbuilding and later for railroad ties. In 1855, this area came under sustainable forest management for teak plantations by the pioneering efforts Douglas Hamilton and Dr. H. F. Cleghorn of the new Tamil Nadu Forest Department.<br><br> 
+
+In the early 1900s, protection of the Karian Sholas was also ensured (Johnsingh 2006a). The area was notified as Anaimalai Wildlife Sanctuary in 1974. of its unique habitats at 3 places – Karian Shola, Grass hills, Manjampatti Valley were notified as a National Park in 1989. The 108 square kilometres (42 sq mi) National Park is the core area of the 958 square kilometres (370 sq mi) Indira Gandhi Wildlife Sanctuary. IGWS was declared a Project Tiger tiger reserve in 2008.The Park and the Sanctuary is under consideration by UNESCO as part of The Western Ghats World Heritage site.The Sanctuary and the Palni Hills in Dindigul District form the Anaimalai Conservation Area.<br>
+<br>
+
+                     
+                     </p>
+                </div>    
+             </div>
+             
+             <!--place : 2 -->
+             <div class="row categories_row" id="ksn">
+               	<div class="col-lg-12">
+                	<p class="page_text"><strong>Karian Shola National Park</strong><br>
+In the early 1900s, protection of the Karian Sholas was also ensured (Johnsingh 2006a). The area was notified as Anaimalai Wildlife Sanctuary in 1974. of its unique habitats at 3 places – Karian Shola, Grass hills, Manjampatti Valley were notified as a National Park in 1989. The 108 square kilometres (42 sq mi) National Park is the core area of the 958 square kilometres (370 sq mi) Indira Gandhi Wildlife Sanctuary. IGWS was declared a Project Tiger tiger reserve in 2008.The Park and the Sanctuary is under consideration by UNESCO as part of The Western Ghats World Heritage site.The Sanctuary and the Palni Hills in Dindigul District form the Anaimalai Conservation Area.
+                     </p>
+                </div>    
+             </div>
+             
+              <!--place : 3 -->
+              <div class="row categories_row" id="asf">
+               	<div class="col-lg-12">
+                	<p class="page_text"><strong>Anaikunthi Shola Forest</strong><br>
+Anamalai wildlife sanctuary is one of the most attractive preserves of nature in Tamil Nadu, is also known as the India Gandhi National Park and is located in the Western Ghats. There are many places of natural and scenic beauty in the Annamalai wildlife sanctuary. Some of them are Grass hills, Karianshola, Anaikunthi Shola, groves, waterfalls, teak forests, reservoirs and dams. <br>
+<br>
+Nilgiri Langur, Liontailed macaque Gaur, Elephant, Chital, Sambar, Mouse Deer, Barking Deer, Variety of Birds, Tiger, panther, Wild Dog, Nilgiri Tahr.The park is rich in mixed deciduous forest with fair population of rosewood and teaks. The forests are noted for their valuable timber trees including teak and rosewood, Hopea parviflora, Mesua ferrea, Calophyllum tomentosum, Vateria indica, Cullenia excels and Mangifera indica. Softwoods include Machilus Macrantha, Alstonia scholaris, Evodia meliaefolia, Ailanthus and Malabaricum. Wood for making pulp is procured from Eucalyptus hybrid and Eucalyptus grandis. Minor forest produce is collected from bamboos, reeds, soapnuts, canes, gums, lemon grass, wild cardamom, honey and amla. In addition to the economically useful plants listed, some rare orchids are found and the sanctuary is the only home of the South Indian species of conifer, podocarpus wallichianus.
+                     </p>
+                </div>    
+             </div>
+             
+              <!--place : 4 -->
+              <div class="row categories_row" id="bl">
+               	<div class="col-lg-12">
+                	<p class="page_text"><strong>Bison Lodge</strong><br>
+It also have a famous name called "Number Parai". Do not forget to visit this place whn you travel to valparai. you will see like you are in universe. The mist will touch you and go often. when the mist touches you.. do not get scared but be at the same place where you stand till it gets cleared. cos the mist place will be of deep valley the other side. Risky for kids. Do not play there. Be cautious. Be at your limits. DO Not drink and play with friends. No risk taking.<br>
+<br>
+But enjoy the nature by relaxing and sitting there. Also i heard that some times elephants visit there / at night lepords. So better take local village people for extra support. They know better when animals near us. You can do trekking (we guys of 10 did trekking for 2.30hrs) to reach or private van/jeep can reach there                     </p>
+                </div>    
+             </div>
+             
+              <!--place : 5 -->
+              <div class="row categories_row" id="wh">
+               	<div class="col-lg-12">
+                	<p class="page_text"><strong>Wood House</strong><br>
+The five suites will be renovated and will add to the number of accommodations available at Top Slip. At present there are 24 suites available in Forest Rest House, Wood House, Cheetal, Ambuli Illam, Bison, Horn Bill, Bamboo Hut, Tree Top, Pillar Top and Mount Stuart.<br>
+<br>
+In addition 36 beds are available in two dormitories. However, Top Slip faces shortage of accommodation during weekends and holiday season and this could be easily overcome by the five buildings that are being taken over from PWD. The department is also considering a proposal to revive trekking in Manomboly where the Forest Department has four to five accommodations. Similarly, efforts are also on to revive the Chinna Kallar trekking path in Valparai area.</p>                </div>    
+             </div>
+             
+              <!--place : 6 -->
+              <div class="row categories_row" id="ec">
+               	<div class="col-lg-12">
+                	<p class="page_text"><strong>Elephant Camp</strong><br>
+Elephant Pongal celebrations organised at Top Slip near Pollachi on Saturday; 13 elephants present were Bharani (27), Nanjan (51), Ramu (42), Kalpana (32), Mariyappan (24), Pari (31), Vikram (14), Selvi (52), Sivagami (61), Vijayalakshmi (59) and Durga (17). Other elephants which could not attend the celebrations due to health problems were Kaleem (45), <br>
+<br>
+Surya (38), Venkatesh (28), Kapil Dev (29), Rajvardhan (13) and Suyambu (14). Valli (67) and Saradha (57) had already retired from their service and did not participate.
+
+<br>
+In addition 36 beds are available in two dormitories. However, Top Slip faces shortage of accommodation during weekends and holiday season and this could be easily overcome by the five buildings that are being taken over from PWD. The department is also considering a proposal to revive trekking in Manomboly where the Forest Department has four to five accommodations. Similarly, efforts are also on to revive the Chinna Kallar trekking path in Valparai area.</p>                </div>    
+             </div>
+             
+             <!--place : 7 -->
+              <div class="row categories_row" id="mu">
+               	<div class="col-lg-12">
+                	<p class="page_text"><strong>Museum</strong><br>
+Topslip is located at 800 feet (240 m) above sea level on the Anamalai mountain range. It is popularly known as Anamalai Hills. 
+
+It is a small place in Indira Gandhi National Park and Wildlife Sanctuary that lies in the Coimbatore District of Tamil Nadu at the southern part of the Nilgiri Biosphere Reserve.[1] Separated from the Nilgiri Hills by the Palghat Gap on the north, the Park is contiguous to the Parambikulam Wildlife Sanctuary (Kerala) to its west and to the Eravikulam National Park (Kerala) and Chinnar Wild life sanctuary.</p>     
+        </div>
+                    
+                    
+              
+             
+             
+              
+        </div> 
+        
+      		  <!--place : 8 -->
+              <div class="row categories_row" id="vs">
+               	<div class="col-lg-12">
+                	<p class="page_text"><strong>Vehicle Safari at topslip</strong><br>
+It was first time for me taking a wildlife safari into the forest and Topslip offers two kinds of safaris on two phases. One at morning and another at evening and other than the vehicle and elephant safaris, hiking is also offered at exploring the forest with a guide walks on. Since we reached Topslip at noon, we had enough time relaxing and I wandered around the area and conversation with a guide excites more and made anticipation at safari.<br>
+<br>
+There are two timings for evening safari and we booked the 5 pm van ride which is only possible for me even its tough or impossible without carried by two or three. Glad the support from guides and my cousin helped me take a seat inside the van (swaraj mazda) and behind the driver seat I got wonderful view on front and side windows. My cousin, who sits beside, took care of me though the rough driveways and the safari lasted for two hours, before halt for sometime at the elephant camp inside the forest.   </p>
+  				</div>
+                    
+                    
+              
+             
+             
+              
+        </div>        
+        
+       
+        </div>
+        
+         <!--Ad Widget -->
+        <div class="col-lg-3">
+        	 <!--1st ad -->
+             <div class="right_ad img-responsive"> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- smartpollachi_hotel_sb_1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9422411093751117"
+     data-ad-slot="1302239787"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>                  
+             
+                         
+        </div>
+        </div>
+  </div>
+</div>
+
+
+<!--FOOTER BOTTOM -->
+<section id="bottom">
+<div class="container">
+	<div class="row ">
+    	<!--1st widget -->
+    	<div class="col-lg-3 bottom_widget">
+        	<div class="bottom_widget_title">
+            	<h4>smartpollachi.com</h4>
+          </div>
+            
+            <p>
+            smartpollachi.com is an online business directory offering COMPLETELY FREE listings to Pollachi,
+This portal is owned and maintained by <span><a href="#"> Balasubramaniam</a></span></p>
+smartpollachi.com was launched in March 2022 and currently has nearly many informations listed .
+            </p>
+            
+        </div>
+        
+        <!--2nd widget -->
+        <div class="col-lg-3 bottom_widget">
+        	<div class="bottom_widget_title">
+            	<h4>Customer Support</h4>
+            </div>
+            
+            <p>Call : +91-90807 21012 / 97875 60773<br />
+
+			Email : smartpollachi@gmail.com </p>
+            
+        </div>
+        
+        <!--3rd widget -->
+        <div class="col-lg-3 bottom_widget">
+        	<div class="bottom_widget_title">
+            	<h4>Links</h4>
+            </div>
+            
+            <div class="bot_social">
+            	<ul>
+                	<li><a href="advertisehere.html">Advertise</a></li>
+                    <li><a href="advertisehere.html">Pricing</a></li>
+                    <li><a href="aboutus.html">Support</a></li>
+                    <li><a href="aboutus.html">Abuse</a></li>
+                    <li><a href="aboutus.html">Contact Us</a></li>
+                    
+                </ul>
+            </div>
+            
+            
+            
+        </div>
+        
+        <!--4th widget -->
+        <div class="col-lg-3 bottom_widget">
+        	<div class="bottom_widget_title">
+            	<h4>Follow us on</h4>
+            </div>
+            
+            <div class="fb-page" data-href="https://www.facebook.com/smartpollachi/" data-tabs="timeline" data-width="270" data-height="210" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/smartpollachi/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/smartpollachi/">smartpollachi.com</a></blockquote></div>
+            
+        </div>
+    </div>
+    
+   
+</div>
+
+</section>
+
+
+<!--copyrights -->
+<section id="section_copyright">
+<div class="container"> 
+    <div class="row copyright">
+    	<div class="col-lg-6">
+        	<p>Site Designed & Maintained By<span><a href="#"> Balasubramaniam</a></span></p>
+        </div>
+    </div>    
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="js/bootstrap.min.js"></script>
+
+
+
+
+</body>
+</html>

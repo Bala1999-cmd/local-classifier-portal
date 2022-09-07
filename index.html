@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Pollachi | Tourism | Travel | Guide | Directory</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="smartpollachi provides classifieds for pollachi and valparai, weather, resorts, hotels, lodges, online pollachi directory" />
+
+<meta property="og:type" content="place">
+<meta property="og:title" content="Pollachi">
+<meta property="og:description" content="Pollachi and Valparai, weather, resorts, hotels, lodges, online pollachi directory">
+<meta property="og:url" content="http://smartpollachi.com/pollachi.html">
+<meta property="og:image" content="http://smartpollachi.com/img/SMART-LIST.png">
+<meta property="fb:app_id" content="521971641197095">
+<meta property="place:location:latitude" content="10.6573">
+<meta property="place:location:longitude" content="77.0107">
+
+<meta name="author" content="http://smartpollachi.com" />
+
+
+
+
+
+<!--CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+
+
+
+<script src="js/jquery.js"></script>
+
+
+
+<script>
+$(document).ready(function () {
+    $(".btn-select").each(function (e) {
+        var value = $(this).find("ul li.selected").html();
+        if (value != undefined) {
+            $(this).find(".btn-select-input").val(value);
+            $(this).find(".btn-select-value").html(value);
+        }
+    });
+});
+
+$(document).on('click', '.btn-select', function (e) {
+    e.preventDefault();
+    var ul = $(this).find("ul");
+    if ($(this).hasClass("active")) {
+        if (ul.find("li").is(e.target)) {
+            var target = $(e.target);
+            target.addClass("selected").siblings().removeClass("selected");
+            var value = target.html();
+            $(this).find(".btn-select-input").val(value);
+            $(this).find(".btn-select-value").html(value);
+        }
+        ul.hide();
+        $(this).removeClass("active");
+    }
+    else {
+        $('.btn-select').not(this).each(function () {
+            $(this).removeClass("active").find("ul").hide();
+        });
+        ul.slideDown(300);
+        $(this).addClass("active");
+    }
+});
+
+$(document).on('click', function (e) {
+    var target = $(e.target).closest(".btn-select");
+    if (!target.length) {
+        $(".btn-select").removeClass("active").find("ul").hide();
+    }
+});
+
+
+
+
+
+</script>
+
+
+</head>
+
+<body>
+
+
+<!--TOP HEADER AREA -->
+<section class="top_header">
+	<div class="container">
+    	<div class="row">
+        	<!--Popular destinations -->
+            <div class="col-lg-3 sle">
+            	 <a class="btn btn-default btn-select">
+                <input type="hidden" class="btn-select-input" id="" name="" value="" />
+                <span class="btn-select-value">Select an Item</span>
+                <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+                <ul>
+                    <li class="selected">Popular Destinations</li>
+                    <li onClick="location.href='topslip.html'">Topslip</li>
+                    <li onClick="location.href='parambikulam.html'">Parambikulam</li>
+                    <li onClick="location.href='valparai.html'">Valparai</li>
+                    <li onClick="location.href='aliyar.html'">Aliyar</li>
+                    <li onClick="location.href='thirumoorthyhills.html'">Thirumoorthy Hills</li>
+                    <li onClick="location.href='amaravathyriver.html'">Amaravathy River</li>
+                </ul>
+            </a> 
+            </div>
+
+            <!--Top menu -->      
+            <div class="col-lg-7">
+            	<div class="navbar navbar-default navbar-static-top">
+            <div class="menu-con">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                  
+                </div>
+                <div class="navbar-collapse collapse  ">
+                    <ul class="nav navbar-nav ">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="advertisehere.html">Advertise Here</a></li>
+                        <li><a href="offers.html">Offers </a></li>
+                        <li><a href="events.html">Events  </a></li>
+                        <li><a href="news.html">News  </a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>            
+            </div>     
+
+           
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!--MAIN AREA ASIDE AND CONTENT -->
+<div class="container">
+	<div class="row">
+    	<!--Logo , Aside -->
+    	<div class="col-lg-3">
+        	<!--logo -->
+            <div class="row">
+            	<div class="col-lg-12">
+            		<div class="logo"><img src="img/SMART-LIST.png" width="236" height="49" alt="Logo" /></div>
+                </div>
+            </div>
+            
+            <!--aside -->
+            <div class="row">
+            	<div class="col-lg-12">
+                	<div class="aside_bar">
+                    	<div class="aside_title">
+            				<h3>Listing Categories</h3>
+            			</div>
+                       
+                        <ul>
+                        	<li><a href="listings/emergency.html" >Emergency</a></li>
+                            <li><a href="pollachi.html" >About Pollachi</a></li>
+                            <li><a href="pollachiclimate.html">Pollachi Weather</a></li>  
+                            <li><a href="pollachimap.html">Pollachi Map</a></li>                           
+                            <li><a href="pollachitovalparai.html">Pollachi to Valparai</a></li>
+                            <li><a href="pollachijayaraman.html" >M.L.A Pollachi Jayaraman</a></li>
+                             <li><a href="pollachishanmugasundaram.html" >M.P Pollachi Shanmugasundaram</a></li>
+                            <li><a href="pollachi.html" >Pollachi Pincode</a> </li>
+                            <li><a href="pollachi to chennai train.html" >Pollachi to Chennai Train</a> </li>                           
+                            <li><a href="listings/hotels.html">Pollachi Resorts</a></li>
+                            <li><a href="pollachianaimalai.html">Pollachi Anaimalai</a></li>
+                            <li><a href="pollachiattractions.html">Pollachi Attractions</a></li>
+                            <li><a href="listings/hotels.html">Pollachi Accommodation</a></li>
+                            <li><a href="allcategories.html">Pollachi Directory</a></li>
+                            <li><a href="topslip.html">Pollachi Elephant Camp</a></li>
+                            <li><a href="listings/beauty-spa.html">Health &amp; Beauty</a></li>
+                            <li><a href="listings/multispeciality-hospitals.html">Hospitals</a></li>
+                            <li><a href="listings/coconuts.html">Pollachi Coconut</a></li>
+                            <li>Logistic &amp; Transport</li>
+                            <li>Repair Service</li>
+                            <li><a href="listings/schools.html">Schools</a></li>
+                            <li>Jobs</li>
+                            <li>Internet</li>
+                            <li>Sports</li>
+                            <li>Reservation &amp; Booking</li>
+                            <li>Bills &amp; Recharge</li>
+                            <li>Agriculture</li>
+                            <li>Hiring</li>
+                            <li class="aside_view_all"><a href="allcategories.html">View All</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!--Content area ( Categories area) -->
+        <div class="col-lg-9">
+      		<!--top ad widget -->
+            <div class="row top_ad_row">
+            	<div class="top_ad_widget img-responsive">
+	    	    <a href="#" ><img src="img/happy-ad-1.jpg" width="100%" height="100%" alt="web design in Pollachi"></a></div>
+            </div>
+            
+            <!--Categories with right ad widget sidebar -->
+            <div class="row ">
+            	<!--Categories -->
+            	<div class="col-lg-9">
+                	<div class="categories_title">
+                    	<h3>Best in Smart List</h3>                      
+                    </div>
+                    
+                    <!--categories starts -->
+                    <div class="row categories_row">
+                    	<!--1st cat -->
+                        <div class="col-lg-4 seperate_cat">
+                        	<h4>Pollachi Directory</h4>
+                            <ul>
+                            	<li><a href="listings/hotels.html">Hotels</a></li>
+                                <li><a href="listings/realestate.html">Real Estate</a></li>
+                                <li><a href="listings/restaurants.html">Restaurant</a></li>
+                                <li><a href="listings/toursandtravels.html">Vehicle Rentals</a></li>
+                                <li><a href="listings/toursandtravels.html" >Tours &amp; Travels</a></li>
+                                <li><a href="listings/actingdrivers.html" >Acting Drivers</a></li>
+                                <li><a href="listings/beauty-spa.html">Beauty - Spa</a></li>
+                                <li><a href="listings/catering.html">Catering</a></li>
+                                <li><a href="listings/bioproducts.html">Bio Products</a></li>
+                                <li class="view_all_li">View All</li>
+                            </ul>
+                        </div>
+                        
+                        <!--2nd cat -->
+                        <div class="col-lg-4 seperate_cat">
+                        	<h4>Classifieds</h4>
+                            <ul>
+                            	<li>General</li>
+                                <li>Lodges</li>
+                                <li>Real Estate</li>
+                                <li>Autmobile Sales</li>
+                                <li>Home &amp; Lifestyle</li>
+                                <li>Jobs</li>
+                                
+                                <li class="view_all_li">View All</li>
+                            </ul>
+                        </div>
+                        
+                        
+                        <!--3rd cat -->
+                        <div class="col-lg-4 seperate_cat">
+                        	<h4>Repair &amp; Service</h4>
+                            <ul>
+                            	<li><a href="listings/ac-sales-and-service.html">AC Sales &amp; Sevice</a></li>
+                                <li>4 Wheeler Workshop</li>
+                                <li>Lorry &amp; Bus Workshop</li>
+                                <li>Two Wheeler Mechanics</li>
+                                <li>Auto Electricians</li>
+                                <li>Tyre Puncture Service</li>
+                                <li>TV &amp; Electronics</li>
+                               
+                                <li class="view_all_li">View All</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row categories_row">
+                    	<!--1st cat -->
+                        <div class="col-lg-4 seperate_cat">
+                        	<h4>Shopping</h4>
+                            <ul>
+                            	<li><a href="listings/readymades.html">Readymades</a></li>
+                                <li><a href="listings/departmentstores.html">Departmental Stores</a></li>
+                                <li><a href="listings/provisionstores.html">Provision Stores</a></li>
+                                <li><a href="listings/medicalstores.html">Medical Stores</a></li>
+                                <li>Tailoring Accessories</li>
+                                <li><a href="listings/mobiles.html">Mobile Phones</a></li>                              
+                                <li class="view_all_li">View All</li>
+                            </ul>
+                        </div>
+                        
+                        <!--2nd cat -->
+                        <div class="col-lg-4 seperate_cat">
+                        	<h4>Education</h4>
+                            <ul>
+                            	<li><a href="listings/schools.html">Schools</a></li>
+                                <li><a href="listings/colleges.html">Colleges</a></li>
+                                <li><a href="listings/computer-education.html">Computer Centres</a></li>
+                                <li>Tution Centres</li>
+                                <li><a href="listings/languages.html">Language Classes</a></li>
+                                <li><a href="listings/studycentre.html">University Study Centre</a></li>
+                                <li class="view_all_li">View All</li>
+                            </ul>
+                        </div>
+                        
+                        <!--3rd cat -->
+                        <div class="col-lg-4 seperate_cat">
+                        	<h4>Transport</h4>
+                            <ul>
+                            	<li>Lorry Transport</li>
+                                <li>Parcel Service</li>
+                                <li>Courier Service</li>
+                                <li>Packers &amp; Movers</li>
+                                <li>Mini Auto </li>
+                                <li>Vehicle Towing</li>
+                                <li class="view_all_li">View All</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row categories_row">
+                    	<!--1st cat -->
+                        <div class="col-lg-4 seperate_cat">
+                        	<h4>Hospitals</h4>
+                            <ul>
+                            	<li><a href="listings/multispeciality-hospitals.html">Multispeciality</a></li>
+                                <li><a href="listings/ortho-hospitals.html">Ortho Hospitals</a></li>
+                                <li><a href="listings/dental.html">Dental Hospitals</a></li>
+                                <li>Child Care</li>
+                                <li><a href="listings/pregnancy.html">Pregnancy Care</a></li>
+                                <li>Clinics</li>
+                                <li class="view_all_li">View All</li>
+                            </ul>
+                        </div>
+                        
+                        <!--2nd cat -->
+                        <div class="col-lg-4 seperate_cat">
+                        	<h4>Industrial</h4>
+                            <ul>
+                            	<li><a href="listings/coir.html">Coir Industries</a></li>
+                                <li><a href="listings/coconuts.html">Coconut Suppliers</a></li>
+                                <li><a href="listings/coirmachinery.html">Coir Machineries</a></li>
+                                <li><a href="listings/textiles.html">Textiles</a></li>
+                                <li><a href="listings/fmcg.html">FMCG</a></li>
+                                <li><a href="listings/snacks.html">Snacks Mfrs</a></li>
+                                </ul>
+                        </div>
+                        
+                        <!--3rd cat -->
+                        <div class="col-lg-4 seperate_cat">
+                        	<h4>Civil Construction</h4>
+                            <ul>
+                            	<li><a href="listings/builders.html">Engineers &amp; Builders</a></li>
+                                <li>Painting Contractors</li>
+                                <li>Masons</li>
+                                <li>Civil Workers</li>
+                                <li>Plumber &amp; Electricians</li>
+                                <li><a href="listings/interiors.html">Interiors</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+                    <!--Popular destinations -->
+                    <div class="categories_title">
+                    	<h3>Popular Destinations</h3>                      
+                    </div>
+                    <div class="row categories_row">
+                    	<!--1st cat -->
+                        <div class="col-lg-4 seperate_cat">
+                        	<h4>Topslip</h4>
+                            <ul>
+                            	<li><a href="topslip.html#atr"> Anamalai Tiger Reserve</a></li>
+                                <li><a href="topslip.html#ksf">Karianshola Forest</a></li>
+                                <li><a href="topslip.html#asf">Anaikunthi Shola Forest</a></li>
+                                <li><a href="topslip.html#bl">Bison Lodge</a></li>
+                                <li><a href="topslip.html#wh">Wood House</a></li>
+                                <li><a href="topslip.html#ec">Elephant Camp</a></li>
+                                <li><a href="topslip.html#mu">Museum</a></li>
+                                <li><a href="topslip.html#vs">Vehicle Safari</a></li>
+                               
+                            </ul>
+                        </div>
+
+                        
+                        
+                        <!--2nd cat -->
+                        <div class="col-lg-4 seperate_cat">
+                        	<h4>Parambikulam</h4>
+                            <ul>
+                            	<li>Tiger Reserve</li>
+                                <li>Thunakadavu Dam</li>
+                                <li>Anappadi</li>
+                                <li>Boat House</li>
+                                <li>Kannimara Teak</li>
+                                <li>Wild Life Forest</li>
+                                <li>Treetop House</li>
+                                <li>Hill Stay</li>
+                                </ul>
+                        </div>
+                        
+                        <!--3rd cat -->
+                        <div class="col-lg-4 seperate_cat">
+                        	<h4>Valparai</h4>
+                            <ul>
+                            	<li>Balaji Temple</li>
+                                <li>Chitti Vinayagar Temple</li>
+                                <li>Sholayar Dam</li>
+                                <li>Nallamudi Poonjolai View</li>
+                                <li>Number Paarai</li>
+                                <li>Various Tea Estates</li>
+                                <li>Hair Pin Bends</li>
+                                <li>Dam View Point</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row categories_row">
+                    	<!--1st cat -->
+                        <div class="col-lg-4 seperate_cat">
+                        	<h4>Aliyar</h4>
+                            <ul>
+                            	<li>Aliyar Dam</li>
+                                <li>Theme Park</li>
+                                <li>Monkey Falls</li>
+                                <li>Aliyar Ashram</li>
+                                <li>Boat House</li>
+                                <li>Dam Stay</li>
+                                <li>Aquarium</li>
+                               </ul>
+                        </div>
+                        
+                        <!--2nd cat -->
+                        <div class="col-lg-4 seperate_cat">
+                        	<h4>Amaravathy River</h4>
+                            <ul>
+                            	<li>Amaravathi Reservoir</li>
+                                <li>Crocodile Park</li>
+                                <li>Crocodile Park</li>
+                                <li>Sainik School</li>
+                                <li>Sanctuary</li>
+                                <li>Defence Area</li>
+                              
+                            </ul>
+                        </div>
+                        
+                        <!--3rd cat -->
+                        <div class="col-lg-4 seperate_cat">
+                        	<h4>Famous Locations</h4>
+                            <ul>
+                            	<li>Thirumoorthy Dam</li>
+                                <li>Munnar Hills</li>
+                                <li>Marayoor</li>
+                                <li>Palani</li>
+                                <li>Palghat Tipu Sultan Fort</li>
+                                <li>Chinnar</li>
+                                <li>Nemmara</li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                     <!--nearest destinations -->
+                    <div class="categories_title">
+                    	<h3>Other Tourist Places</h3>                      
+                    </div>
+                    <div class="row categories_row">
+                    	<!--1st cat -->
+                        <div class="col-lg-4 seperate_cat">
+                        	<h4>Ooty &amp; Mysore</h4>
+                            <ul>
+                            	<li><a href="othertouristplaces/botanicalgardens.html"> Botanical Gardens</a></li>
+                                <li><a href="othertouristplaces/doddabetta.html">Doddabetta</a></li>
+                                <li><a href="othertouristplaces/rosegardenooty.html">Rose Garden, Ooty</a></li>
+                                <li><a href="othertouristplaces/nilgirimountainrailway.html">Nilgiri Mountain Railway</a></li>
+                                <li><a href="othertouristplaces/stonehouse.html">Stone House, Ooty</a></li>
+                                <li><a href="othertouristplaces/emeraldlake.html">Emerald Lake, Ooty</a></li>
+                                <li><a href="othertouristplaces/ootylake.html">Ooty Lake</a></li>
+                                <li><a href="othertouristplaces/mysorepalace.html">Mysore Palace</a></li>
+                                <li><a href="othertouristplaces/brindavangardens.html">Brindavan Gardens</a></li>
+                                <li><a href="othertouristplaces/jaganmohanpalace.html">Jaganmohan Palace</a></li>
+                                <li><a href="othertouristplaces/mysorezoo.html">Mysore Zoo</a></li>
+                                <li><a href="othertouristplaces/railwaymuseummysore.html">Railway Museum Mysore</a></li>
+                                <li><a href="othertouristplaces/blackthunder.html">Black Thunder</a></li>
+                                <li><a href="othertouristplaces/kallaar.html">Kallaar Mettupalayam</a></li>
+                                <li><a href="othertouristplaces/kottagiri.html">Kottagiri</a></li>
+                                
+                               
+                            </ul>
+                        </div>
+                        
+                        <!--2nd cat -->
+                        <div class="col-lg-4 seperate_cat">
+                        	<h4>Kerala Tourism</h4>
+                            <ul>
+                            	<li><a href="othertouristplaces/malampuzha.html">Malampuzha</a></li>
+                                <li><a href="othertouristplaces/tipusultanfort.html">Tipu Sultan Fort</a></li>
+                                <li><a href="othertouristplaces/thrissurzoo.html">Thrissur Zoo</a></li>
+                                <li><a href="othertouristplaces/athirappilly.html">Athirappilly</a></li>
+                                <li><a href="othertouristplaces/kozhikode.html">Kozhikode</a></li>
+                                <li><a href="othertouristplaces/alappuzha.html">Alappuzha</a></li>
+                                <li><a href="othertouristplaces/thiruvananthapuram.html">Thiruvananthapuram</a></li>
+                                <li><a href="othertouristplaces/kochi.html">Kochi</a></li>
+                                <li><a href="othertouristplaces/nelliampathi.html">Nelliampathi</a></li>
+                                <li><a href="othertouristplaces/kumarakom.html">Kumarakom</a></li>
+                                <li><a href="othertouristplaces/kollam.html">Kollam</a></li>
+                                <li><a href="othertouristplaces/guruvayur.html">Guruvayur</a></li>
+                                <li><a href="othertouristplaces/periyarnationalpark.html">Periyar National Park</a></li>
+                                <li><a href="othertouristplaces/eravikulamnationalpark.html">Eravikulam National Park</a></li>
+                                <li><a href="othertouristplaces/kumily.html">Kumily</a></li>
+                                
+                                </ul>
+                        </div>
+                        
+                        <!--3rd cat -->
+                        <div class="col-lg-4 seperate_cat">
+                        	<h4>Tamilnadu Tourism</h4>
+                            <ul>
+                            	<li>Coimbatore</li>
+                                <li>Kodaikanal</li>
+                                <li>Madurai</li>
+                                <li>Trichy</li>
+                                <li>Kanyakumari</li>
+                                <li>Rameshwaram</li>
+                                <li>Yercaud</li>
+                                <li>Yelagiri</li>
+                                <li>Thajavur</li>
+                                <li>Chennai</li>
+                                <li>Nagercoil</li>
+                                <li>Velankanni</li>
+                                <li>Kollimalai</li>
+                                <li>Courtallam</li>
+                                <li>Nagapattinam</li>
+                               
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                <!--Widget sidebar -->
+              <div class="col-lg-3">
+               	  <!--1st ad -->
+                  <div class="right_ad img-responsive">
+                    <img src="img/happy-ad-2.jpg">
+                  </div>                  
+                  <!--1st ad -->
+                  <div class="right_ad img-responsive">
+                  
+                  
+                  <!--2st ad -->
+                  
+                  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Smartpollachi_sidebar_2nd -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9422411093751117"
+     data-ad-slot="9523510580"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                  
+                  <!--2st ad end -->
+                  
+                  </div>
+                  
+                   <!--3rd ad -->
+                  <div class="right_ad img-responsive"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Smartpollachi_sidebar_3rd -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9422411093751117"
+     data-ad-slot="2000243782"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                  </div>
+                  
+                  <!--3rd ad end-->
+              </div>
+            </div>
+   		</div>
+</div>
+</div>
+
+<div class="fb-customerchat"
+ page_id="521971641197095"
+ minimized="true">
+</div>
+
+<!--FOOTER BOTTOM -->
+<section id="bottom">
+<div class="container">
+	<div class="row ">
+    	<!--1st widget -->
+    	<div class="col-lg-3 bottom_widget">
+        	<div class="bottom_widget_title">
+            	<h4>Smartpollachi.com</h4>
+          </div>
+            
+            <p>
+            smartpollachi.com is an online business directory offering COMPLETELY FREE listings to Pollachi,
+This portal is owned and maintained by <span><a href="#"> Balasubramaniam</a></span></p>
+smartpollachi.com was launched in March 2022 and currently has nearly many informations listed .
+            </p>
+            
+        </div>
+        
+        <!--2nd widget -->
+        <div class="col-lg-3 bottom_widget">
+        	<div class="bottom_widget_title">
+            	<h4>Customer Support</h4>
+            </div>
+            
+            <p>Call : +91-90807 21012 / 97875 60773<br />
+
+			Email : smartpollachi@gmail.com </p>
+            
+        </div>
+        
+        <!--3rd widget -->
+        <div class="col-lg-3 bottom_widget">
+        	<div class="bottom_widget_title">
+            	<h4>Links</h4>
+            </div>
+            
+            <div class="bot_social">
+            	<ul>
+                	<li><a href="advertisehere.html">Advertise</a></li>
+                    <li><a href="advertisehere.html">Pricing</a></li>
+                    <li><a href="aboutus.html">Support</a></li>
+                    <li><a href="aboutus.html">Abuse</a></li>
+                    <li><a href="aboutus.html">Contact Us</a></li>
+                    
+                </ul>
+            </div>
+            
+            
+            
+        </div>
+        
+        <!--4th widget -->
+        <div class="col-lg-3 bottom_widget">
+        	<div class="bottom_widget_title">
+            	<h4>Follow us on</h4>
+            </div>
+            
+            <div class="fb-page" data-href="https://www.facebook.com/Smartpollachi/" data-tabs="timeline" data-width="270" data-height="210" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Smartpollachi/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Smartpollachi/">smartpollachi.com</a></blockquote></div>
+            
+        </div>
+    </div>
+    
+   
+</div>
+
+</section>
+
+
+<!--copyrights -->
+<section id="section_copyright">
+<div class="container"> 
+    <div class="row copyright">
+    	<div class="col-lg-6">
+            Updated on : <p id="demo"></p>
+            <p>Site Designed & Maintained By<span><a href="#"> Balasubramaniam</a></span></p>
+        </div>
+    </div>    
+</div>
+</section>
+
+
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+document.getElementById("demo").innerHTML = Date();
+</script>
+
+
+
+
+</body>
+</html>
